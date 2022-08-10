@@ -1,3 +1,4 @@
+import 'package:draw_app_bloc/cubit/color_selection_cubit.dart';
 import 'package:draw_app_bloc/cubit/drawing_option_cubit.dart';
 import 'package:draw_app_bloc/cubit/stroke_width_cubit.dart';
 import 'package:draw_app_bloc/views/draw_page.dart';
@@ -14,7 +15,8 @@ class DrawApp extends StatelessWidget {
         BlocProvider(create: (context) => ShowDrawingCubit()),
         BlocProvider(
           create: (context) => StrokeWidthCubit(),
-        )
+        ),
+        BlocProvider(create: (context) => ColorSelectionCubit())
       ],
       child: const MaterialApp(
         title: "DrawApp",

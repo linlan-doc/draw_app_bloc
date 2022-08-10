@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../stroke_width_dialog.dart';
+import 'stroke_width_dialog.dart';
 
 class StokeWidthOption extends StatelessWidget {
   const StokeWidthOption({Key? key}) : super(key: key);
