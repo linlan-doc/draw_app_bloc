@@ -6,4 +6,8 @@ class ShowDrawingCubit extends Cubit<int> {
   showDrawingOptionClick() {
     emit(1 - state);
   }
+
+  closeOption() {
+    emit(0);
+  }
 }

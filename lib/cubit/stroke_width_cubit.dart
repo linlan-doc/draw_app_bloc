@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 
 //设置线条对话框使用的cubit
 class StrokeWidthCubit extends Cubit<double> {
-  StrokeWidthCubit() : super(1.0);
+  StrokeWidthCubit() : super(10.0);
 
   changeStroke(double stokeWidth) => emit(stokeWidth);
 }

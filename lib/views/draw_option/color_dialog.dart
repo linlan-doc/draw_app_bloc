@@ -31,11 +31,11 @@ class ColorDialog extends StatelessWidget {
     ColorSelectionWidget(
         index: 11, color: Colors.blue, selectedColor: Colors.black),
     ColorSelectionWidget(
-        index: 12, color: Colors.indigo, selectedColor: Colors.black),
+        index: 12, color: Colors.indigo, selectedColor: Colors.white),
     ColorSelectionWidget(
         index: 13, color: Colors.purple, selectedColor: Colors.black),
     ColorSelectionWidget(
-        index: 14, color: Colors.deepPurple, selectedColor: Colors.black),
+        index: 14, color: Colors.deepPurple, selectedColor: Colors.white),
     ColorSelectionWidget(
         index: 15, color: Colors.blueGrey, selectedColor: Colors.black),
     ColorSelectionWidget(
@@ -109,7 +109,7 @@ class ColorDialog extends StatelessWidget {
                   ),
                 ),
                 SimpleDialogOption(
-                  onPressed: () => Navigator.pop(context),
+                  onPressed: () => Navigator.pop(context, 1),
                   child: const Text(
                     "Confirm",
                     style: TextStyle(color: Colors.blue),

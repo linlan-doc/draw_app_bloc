@@ -5,6 +5,8 @@ import 'package:draw_app_bloc/views/draw_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'cubit/paint_stroke_cubit.dart';
+
 class DrawApp extends StatelessWidget {
   const DrawApp({Key? key}) : super(key: key);
 
@@ -16,7 +18,8 @@ class DrawApp extends StatelessWidget {
         BlocProvider(
           create: (context) => StrokeWidthCubit(),
         ),
-        BlocProvider(create: (context) => ColorSelectionCubit())
+        BlocProvider(create: (context) => ColorSelectionCubit()),
+        BlocProvider(create: (context) => PaintStrokeCubit())
       ],
       child: const MaterialApp(
         title: "DrawApp",
